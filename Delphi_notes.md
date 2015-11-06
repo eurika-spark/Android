@@ -75,6 +75,14 @@ FloatToStr(f):String
 #字符串 浮点转换
 StrToFloat(s):Extended
 
+#拷贝 函数
+Copy(S, Index, Count:Integer): String/Array;
+	S	--要拷贝的内容
+	Index	--开始索引
+	Count	--拷贝的长度
+
+#数组、字符串长度
+Length(S):Integer
 
 ===================================================
 
@@ -111,6 +119,51 @@ Else xxxxx ;
 
 桌面 -- additional img
 
+
+#循环结构
+##while语句
+while (codintion) Do 
+	循环体;
+	
+##repeat语句
+Repeat
+	循环体;
+Until (condition);		// condition == true then finish this loop
+
+##for语句
+For 虚幻变量:=初值 To (DownTo) 终值  Do			// To 递增； DownTo 递减；
+	循环体;
+
+
+#数组
+##静态数组 
+###定义一位数组
+Type 		// 定义数组类型
+	数组名称 = Array[下标类型] of 基类型
+例如：
+Type
+	number = Array[2..10] of Integer	// 索引 2 到 10
+	
+下表类型： 整型、字符型、布尔型、子界型 和 枚举型	 
+	
+var 
+	num_one : number;	// 定义数组变量
+	
+简洁的方法：
+var 	
+	num_one : Array[2..9] of Integer ;
+
+###定义二位数组
+Type 
+	数组类型名 = Array[下标类型1, 小标类型2] of 基类型
+	
+Type
+	数组类型名 = Array[小标类型1] of Array[下标类型2] of 基类型
+
+#解决伪随机数的方法
+Randomize;
+
+##动态数组 长度可以动态设定
 
 
 
