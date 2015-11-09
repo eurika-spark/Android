@@ -164,14 +164,54 @@ Type
 Randomize;
 
 ##动态数组 长度可以动态设定
+定义
+	数组类型名 = Array of 基类型
+
+###多维数组
+
+Type
+	数组类型名 = Array of Array of Array of 基类型
+有多少个Array of 就是多少维数组
+
+###setLength 设置动态数组的长度
+
+二维的情况：
+
+var 
+	Arrs : Array of Array of Integer;
+begin
+	setLength(Arrs, 2, 5);		// 设置二维数组的长度， 两行五列
+end;	
+
+动态数组 下标是从0开始的
+
+#inputBox();	弹出框
+空格键的 ASCII码 为 #32
+
+showMessage(); // 相当于js中的alert
 
 
 
+#过程 与 函数
 
+##过程
+procedure 过程名(形参) 
+var 
+	// 声明变量、常量 或 另一个过程或函数
+begin
+	语句;
+end;
 
+#$$$$
+// 形参列表中，如果有多个参数，则用分号分割
+// 而在函数或过程调用中，实参用逗号分割
 
+声明
+procedure Function1(Sender:TObject) ;		// 传值
+procedure Function2(var Str: String) ;		// var 表示传递是地址，传址
+procedure Function3(conts Str: String) ;		// var 表示传递是地址，传址
 
-
+ 
 
 
 
