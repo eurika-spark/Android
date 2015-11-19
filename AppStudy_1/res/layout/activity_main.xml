@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    tools:context=".MainActivity" >
+	    
+	    <Button android:id="@+id/filePlayBtn"
+	        android:layout_width="fill_parent"
+	        android:layout_height="50dp"
+	        android:text="Launch Service for Loading File"
+	        android:layout_marginBottom="12dp"
+	        />
+	    
+	    <Button android:id="@+id/exceptionTestBtn"
+	        android:layout_width="fill_parent"
+	        android:layout_height="50dp"
+	        android:text="测试 全局异常控制"
+	        android:layout_marginBottom="12dp"
+	        />
+	    
+	    <Button android:id="@+id/txtPatternBtn"
+	        android:layout_width="fill_parent"
+	        android:layout_height="50dp"
+	        android:text="编辑文字模板"
+	        android:layout_marginBottom="12dp"
+	        />
+	    
+</LinearLayout>
+    
+    
