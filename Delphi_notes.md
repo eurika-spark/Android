@@ -212,6 +212,128 @@ procedure Function2(var Str: String) ;		// var 表示传递是地址，传址
 procedure Function3(conts Str: String) ;		// var 表示传递是地址，传址
 
  
+#
+action 属性 与菜单有关，动作列表编辑器
+mainMenu	// 控件
+popupMenu	// 控件	右键
+close;	关闭窗口
+
+actionList	// 控件	
+
+
+#事件
+onEnter --类似onFocus
+onExit	--类似onOut
+
+onKeyPress  = onKeyDown + onKeyUp
+
+
+lable、 staticText、TabControl、PageControl
+
+StaticText 和 Label很相似，不同之处，staticText是窗口型文本组件，具有窗口句柄
+
+TabControl是一个容器，它本身可以包含其他组件 --所有的tab共享一个空间
+	tabPosition	-- 标签的位置
+	hotTrack	-- 超链接
+	multiLine	-- 多行显示
+	multiSelect	-- 多选 与 style配合
+
+PageControl 每个page对应一个不同界面
+
+
+
+
+Button、bitButton、speedButton（没有焦点）
+bitButton 有kind属性	--使用系统的图像
+space：图片和文字的间距
+
+radioButton & checkbox
+checkbox 有state属性， cbUnchecked未选中、cbChecked选中、cbGrayed变灰选中
+
+#编辑型的组件
+Edit、MaskEdit、Memo、RichEdit
+
+MaskEdit 带掩码（功能强大） format输入
+format分为3个部分，每个部分以；隔开 ：
+1.格式
+2.用户输入是否被记录
+3.没输入时候的默认填充
+
+Memo
+Memo1.Lines.Add('adding');
+Memo1.Lines.Delete(0);		
+Memo1.Lines.Insert(0, 'Inserting..');
+Memo1.Lines.Move(0, 4);
+Memo1.Lines.count			// 总行数
+Memo.Lines.loadFromFile('text.txt')
+Memo.lines.saveToFile('text.txt')
+
+#OpenDialog
+// 如果执行
+if OpenDialog.execute then
+begin
+end;
+
+OpenDialog.Filter:='给客户看的|给系统的'
+OpenDialog.Filter:='文本文件(*.txt)|*.TXT| 网页(*.html, *.htm)|*.HTML;*.htm';
+
+DateTimetoStr(now())
+
+
+ShellApi
+ShellExecute(handle, '', ....)
+
+#ListBox
+items, MultiSelect, ItemIndex, selected, stored(是否按字母排列)
+List.items.Clear
+List.items.Add
+List.items.Delete
+List.items.Insert
+
+#ComboBox
+Items
+
+#滑块型组件
+##scrollbar
+kind, max, min, largeChange(up/down page), smallChange(左右箭头), position  
+kind = sbHorizal/sbvertical
+
+#trackBar
+slider
+
+#容器 Panel、 GroupBox、ScrollBox
+
+#有序数据类型
+
+#枚举 （顺序类型，每个元素都对应一个有序的整数）
+Type
+	类型标识符 = (标识符1, 标识符2,..., 标识符n) ; 
+
+Type 
+  week = (Sunday, Monday,..., Saturday);
+
+funciton whatDay(day: week): String;
+case day of week
+	Sunday:		whatDay:='Sunday';		// whatDay:=xxx 即为返回值
+	Monday:		whatDay:='Monday';
+end;
+
+#子界类型 （有序类型）
+Type 
+	类型标识符 = 常量1..常量2		// 单调递增的
+
+常量1 和  常量2 是子界的下界和上界，下界必须小于上界 
+
+Type 
+	Num=1..10;
+var
+	n1,n2: Num;
+	
+或者
+
+var
+	n1,n2:1..10;	
+	
 
 
 
