@@ -8,5 +8,12 @@
 
     <!-- Main Page -->
     <string name="toPrintText">Print Module</string>
-    
+
+    <!-- List View Learning -->
+    <string name="toListView">List View</string>
+    <string name="title_activity_list_view">Training List View</string>
+    <string name="listview_title_name">NAME</string>
+    <string name="listview_title_phone">PHONE</string>
+    <string name="listview_title_amount">AMOUNT</string>
+
 </resources>

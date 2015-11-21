@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     
-    <color name="bc_yellow">#EEAD0E</color>
+    <color name="bk_yellow">#EEAD0E</color>
     <color name="txt_yellow">#EE4000</color>
-    <color name="bc_hover_yellow">#EEAD0E</color>
+    <color name="bk_hover_yellow">#EEAD0E</color>
     <color name="txt_hover_yellow">#fff</color>
+    
+    <color name="bk_blue">#87CEFF</color>
+    <color name="txt_blue">#436EEE</color>
        
+    <color name="normal_gray">#636363</color>
+    <color name="normal_white">#fff</color>
+    
+    <color name="normal_title_txt">#121212</color>
+    <color name="normal_title_bk">#969696</color>
+    
 </resources>

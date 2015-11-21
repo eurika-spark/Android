@@ -2,7 +2,8 @@
 <animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
     
     <item android:state_pressed="true" 
-        android:color="@color/bc_yellow"></item>
-    <item android:color="@color/bc_hover_yellow"></item>
+        android:color="@color/bk_yellow"></item>
+    
+    <item android:color="@color/bk_hover_yellow"></item>
 
 </animation-list>
