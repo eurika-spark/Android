@@ -6,4 +6,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="txtPattern">Pattern Editor</string>
 
+    <!-- Main Page -->
+    <string name="toPrintText">Print Module</string>
+    
 </resources>

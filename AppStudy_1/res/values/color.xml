@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="bc_yellow">#EEAD0E</color>
+    <color name="txt_yellow">#EE4000</color>
+    <color name="bc_hover_yellow">#EEAD0E</color>
+    <color name="txt_hover_yellow">#fff</color>
+       
+</resources>
