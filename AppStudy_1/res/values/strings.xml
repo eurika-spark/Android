@@ -16,4 +16,9 @@
     <string name="listview_title_phone">PHONE</string>
     <string name="listview_title_amount">AMOUNT</string>
 
+    <!-- SQLite learning -->
+    <string name="sqlite_btn_txt_add">Add</string>
+    <string name="sqlite_op">Operation</string>
+    
+    
 </resources>
