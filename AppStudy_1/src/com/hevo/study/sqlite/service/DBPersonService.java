@@ -60,6 +60,19 @@ public class DBPersonService {
 		return null;
 	}
 	
+	/**
+	 * 分页查询，为ListView提供数据，绑定cursorAdapter
+	 * @param offset
+	 * @param maxResult
+	 * @return
+	 */
+	public Cursor getScrollDataInCursor(int offset, int maxResult) {
+		SQLiteDatabase db = dbOpenHelper.getReadableDatabase();
+		Cursor cursor = db.rawQuery(" select person_id as _id, person_name, cell_phone from person order by person_id desc limit ?,? ",
+				new String[]{ String.valueOf(offset), String.valueOf(maxResult) });
+		return cursor;
+	}
+	
 	public List<DBPerson> getScrollData(int offset, int maxResult) {
 		List<DBPerson> personList = new ArrayList<DBPerson>();
 		

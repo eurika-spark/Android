@@ -9,7 +9,7 @@ public class DBOpenHelper extends SQLiteOpenHelper {
 
 	public DBOpenHelper(Context context) {
 //		super(context, dbName, factory, version);
-		super(context, "appStudy.db", null, 1);		// null 表示使用默认的游标工厂
+		super(context, "appStudy.db", null, 2);		// null 表示使用默认的游标工厂
 	}
 
 	public DBOpenHelper(Context context, String name, CursorFactory factory,
@@ -23,7 +23,7 @@ public class DBOpenHelper extends SQLiteOpenHelper {
 		StringBuilder sb = new StringBuilder();
 		sb.append("	CREATE TABLE person (	");
 		sb.append("	person_id integer PRIMARY KEY AUTOINCREMENT,	");
-		sb.append("	person_name VARCHAR	");
+		sb.append("	person_name VARCHAR	, ");
 		sb.append("	cell_phone VARCHAR NULL	)	");
 		db.execSQL(sb.toString());
 	}
@@ -31,7 +31,7 @@ public class DBOpenHelper extends SQLiteOpenHelper {
 	// 每次版本号更新的时候调用
 	@Override
 	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-		db.execSQL(" ALERT TABLE person ADD gender VARCHAR NULL ");
+//		db.execSQL(" ALERT TABLE person ADD gender VARCHAR NULL ");
 	}
 
 }
