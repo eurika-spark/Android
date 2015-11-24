@@ -22,5 +22,11 @@
     <string name="sqlite_btn_txt_add">Add</string>
     <string name="sqlite_op">Operation</string>
     <string name="sqlite_del">Delete</string>
+    <string name="sqlite_add_title"> Welcome Addition!</string>
+    <string name="sqlite_add_name">Name:</string>
+    <string name="sqlite_add_name_hint">Please input your name</string>
+    <string name="sqlite_add_phone">Phone No:</string>
+    <string name="sqlite_add_phone_hint">Please input your cell phone number</string>
+    <string name="sqlite_add_btn"> ADD </string>
     
 </resources>

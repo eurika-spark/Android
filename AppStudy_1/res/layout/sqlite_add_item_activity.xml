@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="280dp"
+	android:id="@+id/sqlite_add_item_layout"
+	android:layout_height="wrap_content"
+	android:gravity="center_horizontal"
+    android:orientation="vertical" 
+    >
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+       	android:gravity="center_vertical|center_horizontal"
+        android:text="@string/sqlite_add_title" />
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+       	android:orientation="horizontal"
+       	android:gravity="center_vertical|center_horizontal"
+        >
+	    <TextView 
+	        android:layout_width="100dp"
+	        android:layout_height="fill_parent"
+	        android:gravity="center_vertical|center_horizontal"
+	        android:text="@string/sqlite_add_name"/>
+	    
+	    <EditText
+	        android:id="@+id/add_item_name"
+	        android:layout_width="match_parent"
+	        android:layout_height="fill_parent"
+	        android:ems="10" 
+	        android:hint="@string/sqlite_add_name_hint">
+	        <requestFocus />
+	    </EditText>
+    </LinearLayout>
+    
+	<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+       	android:orientation="horizontal"
+       	android:gravity="center_vertical|center_horizontal"
+        >
+	    <TextView 
+	        android:layout_width="100dp"
+	        android:layout_height="fill_parent"
+	        android:gravity="center_vertical|center_horizontal"
+	        android:text="@string/sqlite_add_phone"/>
+	    
+	    <EditText
+	        android:id="@+id/add_item_phone"
+	        android:layout_width="match_parent"
+	        android:layout_height="fill_parent"
+	        android:ems="10" 
+	        android:hint="@string/sqlite_add_phone_hint"
+	        android:inputType="phone" />
+    </LinearLayout>
+
+	
+	<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+       	android:layout_marginTop="50dp"
+       	android:orientation="horizontal"
+       	android:gravity="center_vertical|center_horizontal"
+        >
+	    
+	    <Button 
+	        android:id="@+id/add_item_btn"
+	        android:layout_width="150dp"
+	        android:layout_height="fill_parent"
+	        android:text="@string/sqlite_add_btn"
+	        />
+	    
+    </LinearLayout>
+
+</LinearLayout>

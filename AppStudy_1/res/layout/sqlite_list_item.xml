@@ -12,6 +12,7 @@
         android:id="@+id/sqlite_name"
         android:textColor="@color/normal_white"
 		android:textStyle="bold"
+		android:text="aaaa"
 		android:textSize="20sp"
 	    android:gravity="center_vertical|center_horizontal"
         />
@@ -22,6 +23,7 @@
 		android:id="@+id/sqlite_phone"
 		android:textColor="@color/normal_white"
 		android:textSize="20sp"
+		android:text="1234"
 	    android:gravity="center_vertical|center_horizontal"
 		/>
 	

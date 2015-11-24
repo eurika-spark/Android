@@ -26,12 +26,23 @@
     <style name="main_textBlock_orange" parent="main_textBlock">
         <item name="android:background">@color/bk_yellow</item>
         <item name="android:textColor">@color/txt_yellow</item>
-        <item name="android:padding">3dp</item>
+        <item name="android:layout_margin">5dp</item>
     </style>
     
 	<style name="main_textBlock_blue" parent="main_textBlock">
         <item name="android:background">@color/bk_blue</item>
         <item name="android:textColor">@color/txt_blue</item>
+    </style>
+    
+	<style name="selfPopupStyle">  
+        <item name="android:windowBackground">@android:color/transparent</item>  
+        <item name="android:windowFrame">@null</item>  
+        <item name="android:windowNoTitle">true</item>  
+        <item name="android:windowIsFloating">true</item>  
+        <item name="android:windowIsTranslucent">true</item>  
+        <item name="android:windowContentOverlay">@null</item>  
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>  
+        <item name="android:backgroundDimEnabled">true</item>  
     </style>
     
 </resources>
