@@ -17,8 +17,10 @@
     <string name="listview_title_amount">AMOUNT</string>
 
     <!-- SQLite learning -->
+    <string name="toSqlite">SQLite</string>
+    <string name="title_activity_sqlite">Training SQLite</string>
     <string name="sqlite_btn_txt_add">Add</string>
     <string name="sqlite_op">Operation</string>
-    
+    <string name="sqlite_del">Delete</string>
     
 </resources>

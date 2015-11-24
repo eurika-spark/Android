@@ -26,6 +26,7 @@
     <style name="main_textBlock_orange" parent="main_textBlock">
         <item name="android:background">@color/bk_yellow</item>
         <item name="android:textColor">@color/txt_yellow</item>
+        <item name="android:padding">3dp</item>
     </style>
     
 	<style name="main_textBlock_blue" parent="main_textBlock">
