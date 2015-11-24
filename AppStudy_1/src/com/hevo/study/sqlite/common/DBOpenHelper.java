@@ -9,7 +9,7 @@ public class DBOpenHelper extends SQLiteOpenHelper {
 
 	public DBOpenHelper(Context context) {
 //		super(context, dbName, factory, version);
-		super(context, "appStudy.db", null, 2);		// null 表示使用默认的游标工厂
+		super(context, "appStudy.db", null, 1);		// null 表示使用默认的游标工厂
 	}
 
 	public DBOpenHelper(Context context, String name, CursorFactory factory,
