@@ -36,6 +36,11 @@
             android:name=".listViewPart.layout.ListViewMainActivity"
             android:label="@string/title_activity_list_view" >
         </activity>
+                
+        <activity
+            android:name=".sqlite.layout.SQLiteMainActivity"
+            android:label="@string/title_activity_sqlite" >
+        </activity>
 
         <service android:name=".print.service.LoadPrintPatternService" />
 
