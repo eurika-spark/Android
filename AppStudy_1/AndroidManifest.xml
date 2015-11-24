@@ -41,6 +41,12 @@
             android:name=".sqlite.layout.SQLiteMainActivity"
             android:label="@string/title_activity_sqlite" >
         </activity>
+            
+        <activity
+            android:name=".sqlite.layout.AddItem4SQLiteActivity"
+            android:theme="@style/selfPopupStyle"
+            android:label="@string/title_activity_sqlite" >
+        </activity>
 
         <service android:name=".print.service.LoadPrintPatternService" />
 
