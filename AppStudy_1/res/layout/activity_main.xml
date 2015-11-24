@@ -25,6 +25,15 @@
 	    style="@style/main_textBlock_blue"
 	    />
     
+	<TextView
+	    android:id="@+id/page_2_sqlite"
+	    android:layout_width="170dp"
+	    android:layout_height="80dp"
+	    android:layout_toRightOf="@id/page_2_print"
+	    android:layout_below="@id/page_2_listView"
+	    android:text="@string/toSqlite" 
+	    style="@style/main_textBlock_blue"
+	    />
     
 </RelativeLayout>
     
