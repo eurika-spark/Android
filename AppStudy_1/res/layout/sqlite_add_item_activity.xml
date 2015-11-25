@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="280dp"
+	android:layout_width="500dp"
 	android:id="@+id/sqlite_add_item_layout"
 	android:layout_height="wrap_content"
 	android:gravity="center_horizontal"
     android:orientation="vertical" 
+    android:background="@color/normal_gray"
     >
     <TextView 
         android:layout_width="fill_parent"
@@ -16,21 +17,24 @@
 
     <LinearLayout 
         android:layout_width="fill_parent"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
        	android:orientation="horizontal"
        	android:gravity="center_vertical|center_horizontal"
         >
 	    <TextView 
 	        android:layout_width="100dp"
 	        android:layout_height="fill_parent"
+	        android:textSize="15sp"
 	        android:gravity="center_vertical|center_horizontal"
+	        android:textColor="@color/normal_white"
 	        android:text="@string/sqlite_add_name"/>
 	    
 	    <EditText
 	        android:id="@+id/add_item_name"
 	        android:layout_width="match_parent"
 	        android:layout_height="fill_parent"
-	        android:ems="10" 
+	        android:ems="20" 
+			android:gravity="center_vertical"
 	        android:hint="@string/sqlite_add_name_hint">
 	        <requestFocus />
 	    </EditText>
@@ -38,13 +42,15 @@
     
 	<LinearLayout 
         android:layout_width="fill_parent"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
        	android:orientation="horizontal"
        	android:gravity="center_vertical|center_horizontal"
         >
 	    <TextView 
 	        android:layout_width="100dp"
 	        android:layout_height="fill_parent"
+	        android:textColor="@color/normal_white"
+	        android:textSize="15sp"
 	        android:gravity="center_vertical|center_horizontal"
 	        android:text="@string/sqlite_add_phone"/>
 	    
@@ -52,7 +58,8 @@
 	        android:id="@+id/add_item_phone"
 	        android:layout_width="match_parent"
 	        android:layout_height="fill_parent"
-	        android:ems="10" 
+	        android:ems="20" 
+			android:gravity="center_vertical"
 	        android:hint="@string/sqlite_add_phone_hint"
 	        android:inputType="phone" />
     </LinearLayout>
