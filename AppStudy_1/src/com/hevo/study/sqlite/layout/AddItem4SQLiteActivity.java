@@ -3,7 +3,6 @@ package com.hevo.study.sqlite.layout;
 import org.apache.commons.lang3.StringUtils;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -71,11 +70,15 @@ public class AddItem4SQLiteActivity extends Activity {
 			}
 			
 			DBPerson person = new DBPerson();
+			person.setName(name);
+			person.setPhone(phone);
 			dbServer.save(person);
 			
-			Intent intent = new Intent();
-			intent.setClass(view.getContext(), SQLiteMainActivity.class);
-			startActivity(intent);
+//			Intent intent = new Intent();
+//			intent.setClass(view.getContext(), SQLiteMainActivity.class);
+//			startActivity(intent);
+			setResult(2);
+			finish();
 		}
 	}
 	
