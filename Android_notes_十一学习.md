@@ -306,7 +306,12 @@ XXXX xxx = XXXX.Stub.asInterface(Ibinder客户端的)
 
 
 
+#AsyncTask = Thread + handler + threadpool
+其中方法 doInBackground() 运行在子线程中
+onPostExecute() 运行在主线程中，
 
+当子线程的 doInBackground()运行结束后，会将结果（影响UI对象）返回给内部的handler对象，
+而onPostExecute()中运行的内容为内容handler要执行的动作
 
 
 
