@@ -45,6 +45,7 @@ public class CheckVersionServlet extends HttpServlet {
 	
 	private String getVersionInfoFromLocal() {
 		String versionInfo = null;
+		System.out.println("---- a request for version....");
 		try {
 			versionInfo = loadVersionInfoFromFile();
 		} catch (Exception e) {
@@ -58,6 +59,7 @@ public class CheckVersionServlet extends HttpServlet {
 			versionInfo = StringUtils.replace(versionInfo, "\r\n", "");
 			versionInfo = StringUtils.replace(versionInfo, "\t", "");
 		}
+		System.out.println("---- the version is ["+versionInfo+"]....");
 		return versionInfo;
 	}
 	
