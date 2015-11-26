@@ -21,17 +21,27 @@
         <item name="android:textSize">23sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:layout_margin">3dp</item>
     </style>
     
     <style name="main_textBlock_orange" parent="main_textBlock">
         <item name="android:background">@color/bk_yellow</item>
         <item name="android:textColor">@color/txt_yellow</item>
-        <item name="android:layout_margin">5dp</item>
     </style>
     
 	<style name="main_textBlock_blue" parent="main_textBlock">
         <item name="android:background">@color/bk_blue</item>
         <item name="android:textColor">@color/txt_blue</item>
+    </style>
+    
+	<style name="main_textBlock_mulberry" parent="main_textBlock">
+        <item name="android:background">@color/bk_mulberry</item>
+        <item name="android:textColor">@color/txt_mulberry</item>
+    </style>
+    
+	<style name="main_textBlock_lightgreen" parent="main_textBlock">
+        <item name="android:background">@color/bk_green</item>
+        <item name="android:textColor">@color/txt_green</item>
     </style>
     
 	<style name="selfPopupStyle">  

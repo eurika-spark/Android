@@ -7,13 +7,12 @@
 
 	<TextView
 	    android:id="@+id/page_2_print"
-	    android:layout_width="110dp"
-	    android:layout_height="150dp"
-	    android:layout_alignParentTop="true"
-	    android:layout_alignParentLeft="true"
-	    android:text="@string/toPrintText" 
 	    style="@style/main_textBlock_orange"
-	    />
+	    android:layout_width="110dp"
+	    android:layout_height="170dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:text="@string/toPrintText" />
 	    
 	<TextView
 	    android:id="@+id/page_2_listView"
@@ -32,9 +31,19 @@
 	    android:layout_toRightOf="@id/page_2_print"
 	    android:layout_below="@id/page_2_listView"
 	    android:text="@string/toSqlite" 
-	    style="@style/main_textBlock_blue"
+	    style="@style/main_textBlock_mulberry"
 	    />
-    
+        
+	<TextView
+	    android:id="@+id/page_2_update"
+	    android:layout_width="120dp"
+	    android:layout_height="170dp"
+	    android:layout_alignParentTop="true"
+	    android:layout_alignParentRight="true"
+	    android:text="@string/toUpdateView" 
+	    style="@style/main_textBlock_lightgreen"
+	    />
+	
 </RelativeLayout>
     
     
