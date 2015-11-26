@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appVersion>
+	<versionCode>3</versionCode>
+	<versionName>Hevo_App.v.1.1</versionName>
+	<updateInfo>Add new function of Updating.</updateInfo>
+	<updateInfo>Add SQLite and ListView Module.</updateInfo>
+	<updateInfo>Repair UI Layout of Main.</updateInfo>
+</appVersion>
