@@ -12,6 +12,7 @@
         android:textSize="23sp"
         android:textColor="@color/normal_white"
         android:textStyle="bold"
+        android:layout_marginTop="50dp"
         android:text=" Check and Update to Latest if You Want!"
         />
     
@@ -32,4 +33,11 @@
 	        />
     </LinearLayout>
 
+    <ImageView android:id="@+id/update_loading_view" 
+         android:layout_width="135.0dip" 
+         android:layout_height="135.0dip"
+         android:layout_gravity="center" 
+         android:visibility="gone"
+         />
+    
 </LinearLayout>

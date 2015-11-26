@@ -34,7 +34,7 @@
     <string name="title_activity_update">App Updates</string>
     <string name="check_update_check_btn">Check</string>
     <string name="check_update_pop_title">Checking for Updates</string>
-    <string name="check_update_info">New Update, do you want to update?</string>
+    <string name="check_update_info">Do you want to update?</string>
     <string name="check_update_update_btn">Update</string>
     <string name="check_update_later">Later</string>
     
