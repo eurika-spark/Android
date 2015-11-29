@@ -36,45 +36,45 @@
 
 ###最终代码像下面这样
 ```Java
-	package org.dragonboy.example;
-	import java.lang.ref.WeakReference;
-	import android.app.Activity;
-	import android.os.Bundle;
-	import android.os.Handler;
-	import android.os.Message;
-	 
- 	public class MyActivity extends Activity {
-	    private MyHandler mHandler;
-	 
- 	    @Override
-	    protected void onCreate(Bundle savedInstanceState) {
-	        super.onCreate(savedInstanceState);
-	         mHandler = new MyHandler(this);
-	    }
-	 
- 	    @Override
-	    protected void onDestroy() {
-	        // Remove all Runnable and Message.
-	        mHandler.removeCallbacksAndMessages(null);
-	 
- 	        super.onDestroy();
-	    }
-	 
- 	    static class MyHandler extends Handler {
-	        // WeakReference to the outer class's instance.
-	        private WeakReference<MyActivity> mOuter;
-	
- 	        public MyHandler(MyActivity activity) {
-	            mOuter = new WeakReference<MyActivity>(activity);
-	        }
-	 
- 	        @Override
-	        public void handleMessage(Message msg) {
-	            MyActivity outer = mOuter.get();
-	            if (outer != null) {
-	                // Do something with outer as your wish.
-	            }
-	        }
-	    }
-	}
+package org.dragonboy.example;
+import java.lang.ref.WeakReference;
+import android.app.Activity;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+ 
+public class MyActivity extends Activity {
+    private MyHandler mHandler;
+ 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+         mHandler = new MyHandler(this);
+    }
+ 
+    @Override
+    protected void onDestroy() {
+        // Remove all Runnable and Message.
+        mHandler.removeCallbacksAndMessages(null);
+ 
+        super.onDestroy();
+    }
+ 
+    static class MyHandler extends Handler {
+        // WeakReference to the outer class's instance.
+        private WeakReference<MyActivity> mOuter;
+
+        public MyHandler(MyActivity activity) {
+            mOuter = new WeakReference<MyActivity>(activity);
+        }
+ 
+        @Override
+        public void handleMessage(Message msg) {
+            MyActivity outer = mOuter.get();
+            if (outer != null) {
+                // Do something with outer as your wish.
+            }
+        }
+    }
+}
 	
