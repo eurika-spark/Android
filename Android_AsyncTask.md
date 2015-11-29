@@ -11,10 +11,6 @@
 
 
 <br>
-<br>
-<font color="#C7001C"><i>publishProgress(Progress... values)</i></font>
-
-<br>
 ## 在使用的时候，有几点需要格外注意：
 >#### 1.异步任务的实例必须在UI线程中创建。
 >#### 2.execute(Params... params)方法必须在UI线程中调用。
