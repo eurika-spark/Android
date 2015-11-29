@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.hevo.study"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="Hevo_Androd_study.V.1.0" >
 
     <uses-sdk
         android:minSdkVersion="9"
@@ -14,6 +14,10 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        
+        <provider android:name=".contentProPart.provider.PersonContentProvider"
+            android:authorities="com.hevo.study.providers.personprovider" />
+        
         <activity
             android:name=".main.MainActivity"
             android:label="@string/app_name" >
@@ -51,6 +55,11 @@
 		<activity
             android:name=".update.layout.UpdateAppActivity"
             android:label="@string/title_activity_update" >
+        </activity>
+        
+		<activity
+            android:name=".progress.layout.ProgressMainActivity"
+            android:label="@string/title_activity_Progress" >
         </activity>
 
         <service android:name=".print.service.LoadPrintPatternService" />

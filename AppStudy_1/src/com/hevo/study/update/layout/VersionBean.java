@@ -26,4 +26,7 @@ public class VersionBean {
 	public void setUpdateInfoList(List<String> updateInfoList) {
 		this.updateInfoList = updateInfoList;
 	}
+	public String getFullVersionName() {
+		return versionName + "." + versionCode;
+	}
 }

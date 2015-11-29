@@ -34,8 +34,18 @@
     <string name="title_activity_update">App Updates</string>
     <string name="check_update_check_btn">Check</string>
     <string name="check_update_pop_title">Checking for Updates</string>
-    <string name="check_update_info">Do you want to update?</string>
+    <string name="check_update_info">New Update, do you want to update?</string>
     <string name="check_update_update_btn">Update</string>
     <string name="check_update_later">Later</string>
+    
+    <!-- Content Provider -->
+    <string name="toProvider">Content Provider</string>
+    
+    <!-- ProgressBar -->
+    <string name="toProgressBar">Progress Bar</string>
+    <string name="title_activity_Progress">Training Progress Bar</string>
+    <string name="btn_txt_1">Progress 1</string>
+    <string name="btn_txt_2">Progress 2</string>
+    
     
 </resources>

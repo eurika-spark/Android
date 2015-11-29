@@ -7,19 +7,20 @@
 
 	<TextView
 	    android:id="@+id/page_2_print"
-	    style="@style/main_textBlock_orange"
 	    android:layout_width="110dp"
 	    android:layout_height="170dp"
-	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentLeft="true" 
 	    android:layout_alignParentTop="true"
-	    android:text="@string/toPrintText" />
+	    android:text="@string/toPrintText" 
+	    style="@style/main_textBlock_orange"
+	    />
 	    
 	<TextView
 	    android:id="@+id/page_2_listView"
-	    android:layout_width="120dp"
+	    android:layout_width="170dp"
 	    android:layout_height="80dp"
 	    android:layout_toRightOf="@id/page_2_print"
-	    android:layout_alignTop="@id/page_2_print"
+	    android:layout_alignParentTop="true"
 	    android:text="@string/toListView" 
 	    style="@style/main_textBlock_blue"
 	    />
@@ -42,6 +43,41 @@
 	    android:layout_alignParentRight="true"
 	    android:text="@string/toUpdateView" 
 	    style="@style/main_textBlock_lightgreen"
+	    />
+        
+	<TextView
+	    android:id="@+id/page_2_provider"
+	    android:layout_width="120dp"
+	    android:layout_height="170dp"
+	    android:layout_toRightOf="@id/page_2_sqlite"
+	    android:layout_alignParentTop="true"
+	    android:text="@string/toProvider" 
+	    style="@style/main_textBlock_pink"
+	    />
+
+	
+	<TextView
+	    android:id="@+id/page_2_progressBar"
+	    android:layout_width="140dp"
+	    android:layout_height="55dp"
+	    android:layout_below="@id/page_2_print"
+	    android:layout_alignParentLeft="true"
+	    android:text="@string/toProgressBar" 
+	    style="@style/main_textSquare"
+	    android:layout_marginTop="30dp"
+	    />
+	
+	
+	<TextView
+	    android:id="@+id/version_info"
+	    android:layout_width="200dp"
+	    android:layout_height="30dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:textSize="14sp"
+	    android:textColor="#797979"
+	    style="@style/main_textBlock_shadow"
+		android:paddingBottom="10dp"
 	    />
 	
 </RelativeLayout>

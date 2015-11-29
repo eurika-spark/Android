@@ -24,6 +24,16 @@
         <item name="android:layout_margin">3dp</item>
     </style>
     
+	<style name="main_textBlock_btn">
+        <item name="android:textSize">23sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+	<style name="main_textBlock_btn_blue" parent="main_textBlock_btn">
+        <item name="android:background">@color/bk_blue</item>
+        <item name="android:textColor">@color/txt_blue</item>
+    </style>
+	    
     <style name="main_textBlock_orange" parent="main_textBlock">
         <item name="android:background">@color/bk_yellow</item>
         <item name="android:textColor">@color/txt_yellow</item>
@@ -44,6 +54,27 @@
         <item name="android:textColor">@color/txt_green</item>
     </style>
     
+	<style name="main_textBlock_pink" parent="main_textBlock_shadow">
+        <item name="android:background">@drawable/text_view_bk_gradient</item>
+        <item name="android:textColor">@color/txt_dark_violet</item>
+    </style>
+    
+	<style name="main_textBlock_shadow" parent="main_textBlock">
+        <item name="android:shadowColor">#5D5D5D</item>
+        <item name="android:shadowDx">5</item>
+        <item name="android:shadowDy">5</item>
+        <item name="android:shadowRadius">5</item>
+	</style>
+	
+	<style name="main_textSquare" >
+	    <item name="android:textSize">20sp</item>
+	    <item name="android:textStyle">bold|italic</item>
+		<item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:background">@drawable/text_view_btn</item>
+        <item name="android:textColor">@color/txt_square</item>
+	</style>
+	
+	
 	<style name="selfPopupStyle">  
         <item name="android:windowBackground">@android:color/transparent</item>  
         <item name="android:windowFrame">@null</item>  

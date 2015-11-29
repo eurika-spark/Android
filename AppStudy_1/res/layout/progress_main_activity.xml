@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_gray"
+    android:orientation="vertical" >
+    
+	<LinearLayout 
+		android:layout_width="fill_parent"        
+		android:layout_height="50dp"
+        android:gravity="center_horizontal|center_vertical"
+		android:orientation="horizontal"
+		android:layout_marginTop="55dp"
+        >
+    
+		     <Button android:id="@+id/progress_1_btn"
+		         android:layout_width="130dp"
+		         android:layout_height="55dp"
+		         android:text="@string/btn_txt_1"
+		      	 android:layout_marginRight="70dp"
+		      	 style="@style/main_textBlock_btn_blue"
+		         />
+		
+		     <Button android:id="@+id/progress_2_btn"
+		         android:layout_width="130dp"
+		         android:layout_height="55dp"
+		      	 style="@style/main_textBlock_btn_blue"
+		         android:text="@string/btn_txt_2"
+		         />
+     
+	</LinearLayout>
+        
+</LinearLayout>

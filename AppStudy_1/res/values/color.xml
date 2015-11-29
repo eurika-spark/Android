@@ -21,4 +21,12 @@
     <color name="bk_green" >#80C040</color>
     <color name="txt_green" >#006000</color>
     
+    <color name="bk_pink" >#E462C6</color>
+    <color name="txt_dark_pink" >#BB2D4B</color>
+    
+    <color name="txt_dark_violet" >#800080</color>
+    
+    <color name="bk_square" >#FEC200</color>
+    <color name="txt_square" >#FFF</color>
+    
 </resources>
