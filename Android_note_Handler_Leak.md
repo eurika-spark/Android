@@ -24,11 +24,11 @@
 
 *****
 ##关于Handler的remove*方法，这儿介绍一下（可以参考源码或文档）
-		removeCallbacks(Runnable r) ——清除r匹配上的Message。
-		removeCallbacks(Runnable r, Object token) ——清除r匹配且匹配token（Message.obj）的Message，token为空时，只匹配r。
-		removeCallbacksAndMessages(Object token) ——清除token匹配上的Message。
-		removeMessages(int what) ——按what来匹配
-		removeMessages(int what, Object object) ——按what来匹配
+	removeCallbacks(Runnable r) ——清除r匹配上的Message。
+	removeCallbacks(Runnable r, Object token) ——清除r匹配且匹配token（Message.obj）的Message，token为空时，只匹配r。
+	removeCallbacksAndMessages(Object token) ——清除token匹配上的Message。
+	removeMessages(int what) ——按what来匹配
+	removeMessages(int what, Object object) ——按what来匹配
 
 *****
 我们更多需要的是清除以该Handler为target的所有Message（包括Callback），那么调用如下方法即可<br>
