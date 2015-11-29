@@ -8,7 +8,8 @@
 </head>
 <body>
 
-<a href="<%=request.getContextPath()%>/checkVersion">Version Check</a>
+<a href="<%=request.getContextPath()%>/checkVersion">Version Check</a><br/><br/>
+<a href="<%=request.getContextPath()%>/updateVersion">Version Update</a>
 
 </body>
 </html>
