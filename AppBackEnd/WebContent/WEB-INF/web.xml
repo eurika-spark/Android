@@ -19,4 +19,13 @@
       <url-pattern>/checkVersion</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+      <servlet-name>versionUpdate</servlet-name>
+      <servlet-class>com.hevo.appBackEnd.servlet.VersionUpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>versionUpdate</servlet-name>
+      <url-pattern>/updateVersion</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
