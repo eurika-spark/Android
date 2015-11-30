@@ -12,6 +12,7 @@ import com.hevo.study.R;
 import com.hevo.study.listViewPart.layout.ListViewMainActivity;
 import com.hevo.study.print.layout.PrintMainActivity;
 import com.hevo.study.progress.layout.ProgressMainActivity;
+import com.hevo.study.requestWeb.layout.RequestWebMainActivity;
 import com.hevo.study.sqlite.layout.SQLiteMainActivity;
 import com.hevo.study.update.layout.UpdateAppActivity;
 
@@ -30,6 +31,8 @@ public class MainActivity extends Activity {
 	private TextView verTextView = null;
 	
 	private TextView progressView = null;
+	
+	private TextView reqWebView = null;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +53,9 @@ public class MainActivity extends Activity {
 		
 		progressView = (TextView) findViewById(R.id.page_2_progressBar);
 		progressView.setOnClickListener(new PageToClickListener(ProgressMainActivity.class));
+		
+		reqWebView = (TextView) findViewById(R.id.page_2_requestWeb);
+		reqWebView.setOnClickListener(new PageToClickListener(RequestWebMainActivity.class));
 		
 		verTextView = (TextView) findViewById(R.id.version_info);
 		verTextView.setText(getFullVersionName());

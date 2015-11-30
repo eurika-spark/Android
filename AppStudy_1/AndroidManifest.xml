@@ -61,6 +61,11 @@
             android:name=".progress.layout.ProgressMainActivity"
             android:label="@string/title_activity_Progress" >
         </activity>
+        
+		<activity
+            android:name=".requestWeb.layout.RequestWebMainActivity"
+            android:label="@string/title_activity_request_web" >
+        </activity>
 
         <service android:name=".print.service.LoadPrintPatternService" />
 

@@ -55,7 +55,6 @@
 	    style="@style/main_textBlock_pink"
 	    />
 
-	
 	<TextView
 	    android:id="@+id/page_2_progressBar"
 	    android:layout_width="140dp"
@@ -65,6 +64,17 @@
 	    android:text="@string/toProgressBar" 
 	    style="@style/main_textSquare"
 	    android:layout_marginTop="30dp"
+	    />
+	
+	<TextView
+	    android:id="@+id/page_2_requestWeb"
+	    android:layout_width="140dp"
+	    android:layout_height="55dp"
+	    android:layout_toRightOf="@id/page_2_progressBar"
+	    android:layout_alignTop="@id/page_2_progressBar"
+	    android:text="@string/toRequestWeb" 
+	    style="@style/main_textSquare"
+	    android:layout_marginLeft="10dp"
 	    />
 	
 	

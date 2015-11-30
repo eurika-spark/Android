@@ -47,5 +47,11 @@
     <string name="btn_txt_1">Progress 1</string>
     <string name="btn_txt_2">Progress 2</string>
     
+    <!-- Request Web -->
+    <string name="title_activity_request_web">Training Request Web</string>
+    <string name="toRequestWeb">Request Web</string>
+    <string name="req_web_get">Get</string>
+    <string name="req_web_post">Post</string>
+    
     
 </resources>

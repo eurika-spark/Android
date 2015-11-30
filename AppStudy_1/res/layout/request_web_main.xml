@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@color/normal_gray"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/req_web_url"
+        android:layout_width="fill_parent"
+        android:layout_height="40sp"
+        android:text="http://10.16.10.30:8080/AppBackEnd/getPostFromApp"
+		android:layout_marginTop="25dp"
+		android:background="@color/normal_white"
+        android:ems="20" >
+        <requestFocus />
+    </EditText>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+       	android:orientation="horizontal"
+       	android:gravity="center_vertical|center_horizontal"
+        >
+	    <TextView 
+	        android:layout_width="100dp"
+	        android:layout_height="fill_parent"
+	        android:textSize="15sp"
+	        android:gravity="center_vertical|center_horizontal"
+	        android:textColor="@color/normal_white"
+	        android:text="@string/sqlite_add_name"/>
+	    
+	    <EditText
+	        android:id="@+id/req_post_name"
+	        android:layout_width="match_parent"
+	        android:layout_height="fill_parent"
+	        android:ems="20" 
+			android:gravity="center_vertical"
+	        android:hint="@string/sqlite_add_name_hint">
+	        <requestFocus />
+	    </EditText>
+    </LinearLayout>
+    
+	<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+       	android:orientation="horizontal"
+       	android:gravity="center_vertical|center_horizontal"
+        >
+	    <TextView 
+	        android:layout_width="100dp"
+	        android:layout_height="fill_parent"
+	        android:textColor="@color/normal_white"
+	        android:textSize="15sp"
+	        android:gravity="center_vertical|center_horizontal"
+	        android:text="@string/sqlite_add_phone"/>
+	    
+	    <EditText
+	        android:id="@+id/req_post_phone"
+	        android:layout_width="match_parent"
+	        android:layout_height="fill_parent"
+	        android:ems="20" 
+			android:gravity="center_vertical"
+	        android:hint="@string/sqlite_add_phone_hint"
+	        android:inputType="phone" />
+    </LinearLayout>
+
+	<LinearLayout 
+		android:layout_width="fill_parent"        
+		android:layout_height="50dp"
+        android:gravity="center_horizontal|center_vertical"
+		android:orientation="horizontal"
+		android:layout_marginTop="55dp"
+        >
+    
+		     <Button android:id="@+id/req_get_btn"
+		         android:layout_width="130dp"
+		         android:layout_height="55dp"
+		         android:text="@string/req_web_get"
+		      	 android:layout_marginRight="30dp"
+		      	 style="@style/main_textBlock_btn_blue"
+		         />
+		
+		     <Button android:id="@+id/req_post_btn"
+		         android:layout_width="130dp"
+		         android:layout_height="55dp"
+		         android:text="@string/req_web_post"
+		      	 style="@style/main_textBlock_btn_blue"
+		         />
+     
+	</LinearLayout>
+    
+</LinearLayout>
