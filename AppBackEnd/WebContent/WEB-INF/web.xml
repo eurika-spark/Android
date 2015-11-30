@@ -27,5 +27,14 @@
       <servlet-name>versionUpdate</servlet-name>
       <url-pattern>/updateVersion</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+      <servlet-name>getPostFromApp</servlet-name>
+      <servlet-class>com.hevo.appBackEnd.servlet.app.GetPostFromApp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>getPostFromApp</servlet-name>
+      <url-pattern>/getPostFromApp</url-pattern>
+  </servlet-mapping>
   
 </web-app>
