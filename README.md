@@ -16,7 +16,7 @@
 	打印GC详细信息
 ####-XX:+PrintGCDetails
 	GC详细的输出
-```Java
+```Code
 Heap
  def new generation   total 13824K, used 11223K [0x27e80000, 0x28d80000, 0x28d80000)
  eden space 12288K,  91% used [0x27e80000, 0x28975f20, 0x28a80000)
@@ -28,7 +28,7 @@ Heap
  the space 12288K,   1% used [0x34680000, 0x346a3a90, 0x346a3c00, 0x35280000)
  ro space 10240K,  44% used [0x38680000, 0x38af73f0, 0x38af7400, 0x39080000)
  rw space 12288K,  52% used [0x39080000, 0x396cdd28, 0x396cde00, 0x39c80000)
-
+```
 
 ####-XX:+PrintGCTimeStamps
 	打印CG发生的时间戳
@@ -50,7 +50,7 @@ Heap
 [Loaded java.lang.String from shared objects file]
 [Loaded java.lang.reflect.GenericDeclaration from shared objects file]
 [Loaded java.lang.reflect.Type from shared objects file]
-	
+```	
 	
 ####-XX:+PrintClassHistogram
 	按下Ctrl+Break后，打印类的信息	
@@ -66,18 +66,18 @@ Heap
 
 	System.out.print("total mem=");
 	System.out.println(Runtime.getRuntime().totalMemory()/1024.0/1024+"M");
-	
+```	
 	
 ####-Xmn
-设置新生代大小
+	设置新生代大小
 
 ####-XX:NewRatio
 	新生代（eden+2*s）和老年代（不包含永久区）的比值
 	4 表示 新生代:老年代=1:4，即年轻代占堆的1/5
+
 ####-XX:SurvivorRatio
 	设置两个Survivor区和eden的比
 	8表示 两个Survivor :eden=2:8，即一个Survivor占年轻代的1/10
-
 
 ####-XX:+HeapDumpOnOutOfMemoryError
 	OOM时导出堆到文件
@@ -90,6 +90,7 @@ Heap
  Vector v=new Vector();
         for(int i=0;i<25;i++)
             v.add(new byte[1*1024*1024]);
+```
 
 ####-XX:OnOutOfMemoryError
 ```Java
@@ -97,6 +98,7 @@ Heap
 	-XX:OnOutOfMemoryError=D:/tools/jdk1.7_40/bin/printstack.bat %p
 	// 当程序OOM时，在D:/a.txt中将会生成线程的dump
 	// 可以在OOM时，发送邮件，甚至是重启程序
+```
 
 ###内存堆比例
 ^根据实际事情调整新生代和幸存代的大小
@@ -114,7 +116,7 @@ Heap
 for(int i=0;i<100000;i++){		// 不断产生新的类
     CglibBean bean = new CglibBean("geym.jvm.ch3.perm.bean"+i,new HashMap());
 }
-
+```
 
 ####-Xss 栈设置
 	通常只有几百K<br/>
@@ -149,7 +151,7 @@ java.lang.StackOverflowError
 deep of calling = 1817
 java.lang.StackOverflowError
 */
-
+```
 
 
 	
