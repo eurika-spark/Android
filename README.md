@@ -6,17 +6,14 @@
 #JVM
 
 ##JVM配置
-###Trace 跟踪参数
 
-####-verbose:gc
-####-XX:+printGC
+###Trace 跟踪参数
+####-verbose:gc -XX:+printGC
 	输出GC信息
 	
 ####-XX:+PrintGCDetails
 	打印GC详细信息
-####-XX:+PrintGCDetails
-	GC详细的输出
-```Code
+```Bash
 Heap
  def new generation   total 13824K, used 11223K [0x27e80000, 0x28d80000, 0x28d80000)
  eden space 12288K,  91% used [0x27e80000, 0x28975f20, 0x28a80000)
@@ -54,7 +51,9 @@ Heap
 	
 ####-XX:+PrintClassHistogram
 	按下Ctrl+Break后，打印类的信息	
+	分别显示：序号、实例数量、总大小、类型  --列表
 		
+###堆分配	
 ####-Xmx –Xms
 	指定最大堆和最小堆
 ```Java
@@ -106,6 +105,7 @@ Heap
 ^幸存代占新生代的1/10
 ^在OOM时，记得Dump出堆，确保可以排查现场问题
 
+###永久区（方法区）
 ####-XX:PermSize  -XX:MaxPermSize
 	设置永久区的初始空间和最大空间
 	他们表示，一个系统可以容纳多少个类型
@@ -118,6 +118,7 @@ for(int i=0;i<100000;i++){		// 不断产生新的类
 }
 ```
 
+###栈分配
 ####-Xss 栈设置
 	通常只有几百K<br/>
 	决定了函数调用的深度<br/>
