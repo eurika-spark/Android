@@ -10,7 +10,7 @@
 
 ####-verbose:gc
 ####-XX:+printGC
-
+	输出GC信息
 	
 ####-XX:+PrintGCDetails
 	打印GC详细信息
@@ -28,6 +28,7 @@
 	   the space 12288K,   1% used [0x34680000, 0x346a3a90, 0x346a3c00, 0x35280000)
 		ro space 10240K,  44% used [0x38680000, 0x38af73f0, 0x38af7400, 0x39080000)
 		rw space 12288K,  52% used [0x39080000, 0x396cdd28, 0x396cde00, 0x39c80000)
+
 
 ####-XX:+PrintGCTimeStamps
 	打印CG发生的时间戳
