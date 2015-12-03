@@ -90,39 +90,38 @@
         for(int i=0;i<25;i++)
             v.add(new byte[1*1024*1024]);
 
+####-XX:OnOutOfMemoryError
+```Java
+	// 在OOM时，执行一个脚本
+	-XX:OnOutOfMemoryError=D:/tools/jdk1.7_40/bin/printstack.bat %p
+	// 当程序OOM时，在D:/a.txt中将会生成线程的dump
+	// 可以在OOM时，发送邮件，甚至是重启程序
 
--XX:OnOutOfMemoryError
-在OOM时，执行一个脚本
-"-XX:OnOutOfMemoryError=D:/tools/jdk1.7_40/bin/printstack.bat %p“
- 当程序OOM时，在D:/a.txt中将会生成线程的dump
-可以在OOM时，发送邮件，甚至是重启程序
+###内存堆比例
+^根据实际事情调整新生代和幸存代的大小
+^官方推荐新生代占堆的3/8
+^幸存代占新生代的1/10
+^在OOM时，记得Dump出堆，确保可以排查现场问题
 
-根据实际事情调整新生代和幸存代的大小
-官方推荐新生代占堆的3/8
-幸存代占新生代的1/10
-在OOM时，记得Dump出堆，确保可以排查现场问题
+####-XX:PermSize  -XX:MaxPermSize
+	设置永久区的初始空间和最大空间
+	他们表示，一个系统可以容纳多少个类型
 
--XX:PermSize  -XX:MaxPermSize
-设置永久区的初始空间和最大空间
-他们表示，一个系统可以容纳多少个类型
-
-
-使用CGLIB等库的时候，可能会产生大量的类，这些类，有可能撑爆永久区导致OOM
+```Java
+// 使用CGLIB等库的时候，可能会产生大量的类，这些类，有可能撑爆永久区导致OOM
 
 for(int i=0;i<100000;i++){		// 不断产生新的类
     CglibBean bean = new CglibBean("geym.jvm.ch3.perm.bean"+i,new HashMap());
 }
 
 
--Xss
-通常只有几百K
-决定了函数调用的深度
-每个线程都有独立的栈空间
-局部变量、参数 分配在栈上
+####-Xss 栈设置
+	通常只有几百K<br/>
+	决定了函数调用的深度<br/>
+	每个线程都有独立的栈空间<br/>
+	局部变量、参数 分配在栈上<br/>
 
-
-
-
+```Java
 public class TestStackDeep {
 	private static int count=0;
 	public static void recursion(long a,long b,long c){
@@ -139,8 +138,8 @@ public class TestStackDeep {
 		}
 	}
 }
-递归调用
-
+// 递归调用
+/**
 -Xss128K
 deep of calling = 701
 java.lang.StackOverflowError
@@ -148,6 +147,8 @@ java.lang.StackOverflowError
 -Xss256K
 deep of calling = 1817
 java.lang.StackOverflowError
+*/
 
-			
+
+
 	
