@@ -17,17 +17,17 @@
 ####-XX:+PrintGCDetails
 	GCÏêÏ¸µÄÊä³ö
 ```Java
-	Heap
-	 def new generation   total 13824K, used 11223K [0x27e80000, 0x28d80000, 0x28d80000)
-	  eden space 12288K,  91% used [0x27e80000, 0x28975f20, 0x28a80000)
-	  from space 1536K,   0% used [0x28a80000, 0x28a80000, 0x28c00000)
-	  to   space 1536K,   0% used [0x28c00000, 0x28c00000, 0x28d80000)
-	 tenured generation   total 5120K, used 0K [0x28d80000, 0x29280000, 0x34680000)
-	   the space 5120K,   0% used [0x28d80000, 0x28d80000, 0x28d80200, 0x29280000)
-	 compacting perm gen  total 12288K, used 142K [0x34680000, 0x35280000, 0x38680000)
-	   the space 12288K,   1% used [0x34680000, 0x346a3a90, 0x346a3c00, 0x35280000)
-		ro space 10240K,  44% used [0x38680000, 0x38af73f0, 0x38af7400, 0x39080000)
-		rw space 12288K,  52% used [0x39080000, 0x396cdd28, 0x396cde00, 0x39c80000)
+Heap
+ def new generation   total 13824K, used 11223K [0x27e80000, 0x28d80000, 0x28d80000)
+ eden space 12288K,  91% used [0x27e80000, 0x28975f20, 0x28a80000)
+ from space 1536K,   0% used [0x28a80000, 0x28a80000, 0x28c00000)
+ to   space 1536K,   0% used [0x28c00000, 0x28c00000, 0x28d80000)
+ tenured generation   total 5120K, used 0K [0x28d80000, 0x29280000, 0x34680000)
+ the space 5120K,   0% used [0x28d80000, 0x28d80000, 0x28d80200, 0x29280000)
+ compacting perm gen  total 12288K, used 142K [0x34680000, 0x35280000, 0x38680000)
+ the space 12288K,   1% used [0x34680000, 0x346a3a90, 0x346a3c00, 0x35280000)
+ ro space 10240K,  44% used [0x38680000, 0x38af73f0, 0x38af7400, 0x39080000)
+ rw space 12288K,  52% used [0x39080000, 0x396cdd28, 0x396cde00, 0x39c80000)
 
 
 ####-XX:+PrintGCTimeStamps
